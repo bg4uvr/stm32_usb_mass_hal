@@ -1,41 +1,9 @@
 # stm32_usb_mass_hal
 
 #### 介绍
+
 stm32f103c8t6，使用内部flash做u盘的示例，代码使用STM32cubeIDE编译。
 
-示例使用了stm32f103c8t6“赠送”的后64KB flash空间，实现了一个小u盘。
+本示例是为了回复电脑之家论坛一个网友的帖子而专门写的（其实也是因为自己想练习一下新装的Stm32CubeIde o(^▽^)o）。示例使用了stm32f103c8t6“赠送”的后64KB flash空间，实现了一个小u盘。板子就是某宝那种最常见的小板，我把A12脚（即USB D+脚）的1.5K上拉电阻拆了，改接在A12与A15之间（这两个脚挨着），代码里控制这个A15启动后上拉，这样做的目的是每次下载代码后，不用重新插拔USB线，就可以被电脑识别，方便实验。
 
 代码只是演示实现方法，实用意义不大。
-
-#### 软件架构
-软件架构说明
-
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 码云特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5.  码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
