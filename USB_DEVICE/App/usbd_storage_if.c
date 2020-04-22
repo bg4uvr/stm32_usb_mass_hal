@@ -122,8 +122,7 @@ const int8_t STORAGE_Inquirydata_FS[] = {/* 36 */
 /* USER CODE END INQUIRY_DATA_FS */
 
 /* USER CODE BEGIN PRIVATE_VARIABLES */
-void STFlash_ReadBuffer(uint32_t blk_addr, uint8_t *buf, uint16_t blk_len);
-void STFlash_WriteBuffer(uint32_t blk_addr, uint8_t *buf, uint16_t blk_len);
+
 /* USER CODE END PRIVATE_VARIABLES */
 
 /**
