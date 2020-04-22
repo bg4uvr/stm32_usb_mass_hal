@@ -68,12 +68,14 @@
   */
 
 #define STORAGE_LUN_NBR                  1
-#define STORAGE_BLK_NBR                  64
-#define STORAGE_BLK_SIZ                  1024
+#define STORAGE_BLK_NBR                  0x10000
+#define STORAGE_BLK_SIZ                  0x200
 
 /* USER CODE BEGIN PRIVATE_DEFINES */
 
-#define FLASH_START_ADDR        	0x08010000	//U盘占用FLASH空间起始地址
+#define FLASH_START_ADDR	0x08010000	//U盘占用FLASH空间起始地址
+#define USER_BLK_NBR		64			//U盘块数量
+#define USER_BLK_SIZ		1024		//U盘块大小
 
 /* USER CODE END PRIVATE_DEFINES */
 
@@ -199,8 +201,8 @@ int8_t STORAGE_Init_FS(uint8_t lun)
 int8_t STORAGE_GetCapacity_FS(uint8_t lun, uint32_t *block_num, uint16_t *block_size)
 {
   /* USER CODE BEGIN 3 */
-  *block_num  = STORAGE_BLK_NBR;
-  *block_size = STORAGE_BLK_SIZ;
+  *block_num  = USER_BLK_NBR;
+  *block_size = USER_BLK_SIZ;
 
   return (USBD_OK);
   /* USER CODE END 3 */
